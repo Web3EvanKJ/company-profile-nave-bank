@@ -1,7 +1,15 @@
-"use client";
-
 import Image from "next/image";
 import { Users, Shield, TrendingUp } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "OCBC Bank",
+  description: "OCBC bank official website",
+  icons: {
+    icon: "/assets/ocbc-logo.jpg", // normal favicon
+    shortcut: "/assets/ocbc-logo.jpg", // for browser shortcuts
+  },
+};
 
 export default function AboutPage() {
   return (
@@ -16,7 +24,9 @@ export default function AboutPage() {
           priority
         />
         <div className="relative z-10 text-center px-6">
-          <h1 className="text-4xl md:text-6xl font-bold">About Us</h1>
+          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent leading-snug">
+            About Us
+          </h1>
           <p className="mt-4 text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
             Learn more about who we are, what we stand for, and how we empower
             financial success.
@@ -35,7 +45,7 @@ export default function AboutPage() {
             className="rounded-xl p-10 shadow-lg object-cover"
           />
           <div>
-            <h2 className="text-3xl font-bold mb-4">Our Story</h2>
+            <h2 className="text-3xl font-bold mb-4 text-red-600">Our Story</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
               Founded with the mission to redefine modern banking, OCBC has been
               at the forefront of delivering innovative financial solutions. Our
@@ -76,7 +86,9 @@ export default function AboutPage() {
 
       {/* Team Section */}
       <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-red-600">
+          Meet Our Team
+        </h2>
         <div className="grid md:grid-cols-3 gap-8 text-center">
           <div>
             <Image

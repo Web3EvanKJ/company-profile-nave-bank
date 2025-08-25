@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import {
   CreditCard,
@@ -9,6 +7,16 @@ import {
   Smartphone,
   Globe,
 } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "OCBC Bank",
+  description: "OCBC bank official website",
+  icons: {
+    icon: "/assets/ocbc-logo.jpg", // normal favicon
+    shortcut: "/assets/ocbc-logo.jpg", // for browser shortcuts
+  },
+};
 
 export default function ServicesPage() {
   return (
@@ -23,7 +31,9 @@ export default function ServicesPage() {
           priority
         />
         <div className="relative z-10 text-center px-6">
-          <h1 className="text-4xl md:text-6xl font-bold">Our Services</h1>
+          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent leading-snug">
+            Our Services
+          </h1>
           <p className="mt-4 text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
             Explore our wide range of financial products designed to support
             individuals and businesses at every stage.
@@ -33,7 +43,9 @@ export default function ServicesPage() {
 
       {/* Services Grid */}
       <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">What We Offer</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-red-600">
+          What We Offer
+        </h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="p-6 rounded-2xl shadow bg-gray-50 dark:bg-gray-900 text-center">
             <CreditCard className="mx-auto h-10 w-10 text-red-600 mb-4" />

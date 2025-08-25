@@ -1,13 +1,10 @@
-"use client";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { SVGProps } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 
 export default function Navbar() {
-  const router = useRouter();
   return (
     <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
       <Sheet>
@@ -31,32 +28,46 @@ export default function Navbar() {
           </Link>
           <div className="grid gap-2 px-6 pb-6">
             <Link
-              href="#"
-              className="flex w-full items-center py-2 text-lg font-semibold"
+              href="/"
+              className="flex w-full items-center py-2 text-lg font-semibold text-red-600"
               prefetch={false}
             >
-              Home
+              Homes
             </Link>
             <Link
-              href="#"
-              className="flex w-full items-center py-2 text-lg font-semibold"
+              href="/about-us"
+              className="flex w-full items-center py-2 text-lg font-semibold text-red-600"
               prefetch={false}
             >
               About
             </Link>
             <Link
-              href="#"
-              className="flex w-full items-center py-2 text-lg font-semibold"
+              href="/service"
+              className="flex w-full items-center py-2 text-lg font-semibold text-red-600"
               prefetch={false}
             >
               Services
             </Link>
             <Link
-              href="#"
-              className="flex w-full items-center py-2 text-lg font-semibold"
+              href="/team"
+              className="flex w-full items-center py-2 text-lg font-semibold text-red-600"
               prefetch={false}
             >
-              Contact
+              Team
+            </Link>
+            <Link
+              href="/blog"
+              className="flex w-full items-center py-2 text-lg font-semibold text-red-600"
+              prefetch={false}
+            >
+              Blog
+            </Link>
+            <Link
+              href="/login"
+              className="flex w-full items-center justify-center py-2 text-lg font-semibold text-white bg-red-600 rounded-md"
+              prefetch={false}
+            >
+              Login
             </Link>
           </div>
         </SheetContent>
@@ -75,31 +86,45 @@ export default function Navbar() {
       <nav className="ml-auto hidden lg:flex gap-6">
         <Link
           href="/"
-          className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50"
+          className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors text-red-600 hover:bg-gray-100 hover:text-red-700 focus:bg-gray-100 focus:text-red-700 focus:outline-none disabled:pointer-events-none dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 "
           prefetch={false}
         >
           Home
         </Link>
         <Link
           href="/about-us"
-          className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 "
+          className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-red-700 focus:bg-gray-100 focus:text-red-700 focus:outline-none disabled:pointer-events-none dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 text-red-600"
           prefetch={false}
         >
           About
         </Link>
         <Link
           href="/service"
-          className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50"
+          className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-red-700 focus:bg-gray-100 focus:text-red-700 focus:outline-none disabled:pointer-events-none dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 text-red-600"
           prefetch={false}
         >
           Services
         </Link>
         <Link
           href="/team"
-          className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none  dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50"
+          className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-red-700 focus:bg-gray-100 focus:text-red-700 focus:outline-none disabled:pointer-events-none  dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 text-red-600"
           prefetch={false}
         >
           Team
+        </Link>
+        <Link
+          href="/blog"
+          className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-red-700 focus:bg-gray-100 focus:text-red-7  00 focus:outline-none disabled:pointer-events-none  dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 text-red-600"
+          prefetch={false}
+        >
+          Blog
+        </Link>
+        <Link
+          href="/login"
+          prefetch={false}
+          className="inline-flex items-center justify-center rounded-md bg-red-600 px-6 py-2 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none transition"
+        >
+          Login
         </Link>
       </nav>
     </header>

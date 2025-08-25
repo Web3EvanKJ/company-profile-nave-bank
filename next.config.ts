@@ -7,6 +7,18 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "randomuser.me",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.azeusconvene.com",
+      },
+      {
+        protocol: "https",
+        hostname: "rms.koenig-solutions.com",
+      },
+      {
+        protocol: "https",
+        hostname: "static.vecteezy.com",
+      },
     ],
   },
 };

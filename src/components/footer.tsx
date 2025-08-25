@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mx-3">
           {/* Brand / Logo */}
           <div>
-            <h2 className="text-xl font-bold text-gray-900 dark:text-white">
+            <h2 className="text-xl font-bold text-red-600 dark:text-white">
               OCBC Inc
             </h2>
             <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
