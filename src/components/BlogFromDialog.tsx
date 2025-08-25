@@ -57,7 +57,7 @@ export function BlogFormDialog({ mode, post }: BlogFormDialogProps) {
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         {mode === "add" ? (
-          <Button>+ Add Blog</Button>
+          <Button className="bg-red-600">+ Add Blog</Button>
         ) : (
           <Button variant="outline" size="sm">
             Edit
