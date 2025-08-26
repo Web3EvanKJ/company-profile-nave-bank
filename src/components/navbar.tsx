@@ -1,4 +1,11 @@
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetTrigger,
+  SheetContent,
+  SheetClose,
+  SheetHeader,
+  SheetTitle,
+} from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { SVGProps } from "react";
@@ -15,60 +22,83 @@ export default function Navbar() {
           </Button>
         </SheetTrigger>
         <SheetContent side="left">
-          <Link href="/" className="mr-6 lg:flex" prefetch={false}>
-            <Image
-              src="/assets/Logo-ocbc.svg.png"
-              alt="OCBC Logo"
-              width={150}
-              height={75}
-              priority
-              className="rounded-lg m-4"
-            />
-            <span className="sr-only">OCBC Inc</span>
-          </Link>
-          <div className="grid gap-2 px-6 pb-6">
-            <Link
-              href="/"
-              className="flex w-full items-center py-2 text-lg font-semibold text-red-600"
-              prefetch={false}
-            >
-              Homes
-            </Link>
-            <Link
-              href="/about-us"
-              className="flex w-full items-center py-2 text-lg font-semibold text-red-600"
-              prefetch={false}
-            >
-              About
-            </Link>
-            <Link
-              href="/service"
-              className="flex w-full items-center py-2 text-lg font-semibold text-red-600"
-              prefetch={false}
-            >
-              Services
-            </Link>
-            <Link
-              href="/team"
-              className="flex w-full items-center py-2 text-lg font-semibold text-red-600"
-              prefetch={false}
-            >
-              Team
-            </Link>
-            <Link
-              href="/blog"
-              className="flex w-full items-center py-2 text-lg font-semibold text-red-600"
-              prefetch={false}
-            >
-              Blog
-            </Link>
-            <Link
-              href="/login"
-              className="flex w-full items-center justify-center py-2 text-lg font-semibold text-white bg-red-600 rounded-md"
-              prefetch={false}
-            >
-              Login
-            </Link>
+          <SheetHeader>
+            <SheetTitle>
+              <Link href="/" className="mr-6 lg:flex" prefetch={false}>
+                <Image
+                  src="/assets/Logo-ocbc.svg.png"
+                  alt="OCBC Logo"
+                  width={150}
+                  height={75}
+                  priority
+                  className="rounded-lg"
+                />
+                <span className="sr-only">OCBC Inc</span>
+              </Link>
+            </SheetTitle>
+          </SheetHeader>
+          <div>
+            <div className="grid gap-2 px-6 pb-6">
+              <SheetClose asChild>
+                <Link
+                  href="/"
+                  className="flex w-full items-center py-2 text-lg font-semibold text-red-600"
+                  prefetch={false}
+                >
+                  Home
+                </Link>
+              </SheetClose>
+
+              <SheetClose asChild>
+                <Link
+                  href="/about-us"
+                  className="flex w-full items-center py-2 text-lg font-semibold text-red-600"
+                  prefetch={false}
+                >
+                  About
+                </Link>
+              </SheetClose>
+
+              <SheetClose asChild>
+                <Link
+                  href="/service"
+                  className="flex w-full items-center py-2 text-lg font-semibold text-red-600"
+                  prefetch={false}
+                >
+                  Services
+                </Link>
+              </SheetClose>
+
+              <SheetClose asChild>
+                <Link
+                  href="/team"
+                  className="flex w-full items-center py-2 text-lg font-semibold text-red-600"
+                  prefetch={false}
+                >
+                  Team
+                </Link>
+              </SheetClose>
+
+              <SheetClose asChild>
+                <Link
+                  href="/blog"
+                  className="flex w-full items-center py-2 text-lg font-semibold text-red-600"
+                  prefetch={false}
+                >
+                  Blog
+                </Link>
+              </SheetClose>
+
+              <SheetClose asChild>
+                <Link
+                  href="/login"
+                  className="flex w-full items-center justify-center py-2 text-lg font-semibold text-white bg-red-600 rounded-md mt-4"
+                  prefetch={false}
+                >
+                  Login
+                </Link>
+              </SheetClose>
+            </div>
           </div>
         </SheetContent>
       </Sheet>

@@ -49,9 +49,7 @@ export default function BlogDetailPage() {
         )}
       </div>
       {/* Blog Content */}
-      <article className="max-w-none leading-relaxed text-gray-800">
-        {post.body}
-      </article>
+      <article className="leading-relaxed text-gray-800">{post.body}</article>
 
       {/* Admin Controls */}
       {user?.role === "admin" && (
