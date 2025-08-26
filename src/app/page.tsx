@@ -10,8 +10,7 @@ function App() {
       <section
         className="relative lg:h-[90vh] h-[70vh] flex items-center justify-start bg-cover bg-center text-white"
         style={{
-          backgroundImage:
-            "url('https://cdn5.ocbc.id/asset/media/Feature/Banner/Main-Banner/2023/slide-banner-ocbc-melajujauh_d.jpg')",
+          backgroundImage: "url('/assets/ocbc-sky-banner.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-white/50 " />
