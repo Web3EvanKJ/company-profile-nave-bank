@@ -37,7 +37,7 @@ export default function BlogDetailPage() {
       </div>
 
       {/* Featured Image */}
-      <div className="relative w-full h-[400px] md:h-[500px] mb-20">
+      <div className="relative w-full sm:h-[200px] sm:mb-10 md:h-[500px] md:mb-20">
         {post.image && (
           <Image
             src={post?.image}
@@ -48,9 +48,8 @@ export default function BlogDetailPage() {
           />
         )}
       </div>
-
       {/* Blog Content */}
-      <article className="prose prose-lg prose-gray max-w-none leading-relaxed text-gray-800">
+      <article className="max-w-none leading-relaxed text-gray-800">
         {post.body}
       </article>
 
