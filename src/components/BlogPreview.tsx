@@ -20,7 +20,7 @@ const BlogPreview = () => {
           <Link key={post.id} href={`/blog/${post.id}`}>
             <div
               key={post.id}
-              className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition"
+              className="p-6 bg-white shadow-sm hover:shadow-lg transition"
             >
               {post.image && (
                 <Image
@@ -28,7 +28,7 @@ const BlogPreview = () => {
                   alt={post.title}
                   width={300}
                   height={200}
-                  className="rounded-lg shadow-lg mb-6 w-full h-48 object-cover"
+                  className=" mb-6 w-full h-48 object-cover"
                 />
               )}
               <h2 className="text-2xl font-semibold text-red-600">

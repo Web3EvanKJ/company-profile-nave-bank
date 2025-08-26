@@ -37,14 +37,14 @@ export default function BlogDetailPage() {
       </div>
 
       {/* Featured Image */}
-      <div className="relative w-full h-[400px] md:h-[500px] mb-10">
+      <div className="relative w-full h-[400px] md:h-[500px] mb-20">
         {post.image && (
           <Image
             src={post?.image}
             alt={post.title}
             width={300}
             height={200}
-            className="rounded-lg shadow-lg mb-6 w-full h-48 object-cover"
+            className="rounded-lg shadow-lg mb-6 w-full object-cover"
           />
         )}
       </div>

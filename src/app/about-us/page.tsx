@@ -42,7 +42,7 @@ export default function AboutPage() {
             alt="OCBC Office"
             width={600}
             height={400}
-            className="rounded-xl p-10 shadow-lg object-cover"
+            className=" p-10 object-cover"
           />
           <div>
             <h2 className="text-3xl font-bold mb-4 text-red-600">Our Story</h2>
@@ -96,7 +96,7 @@ export default function AboutPage() {
               alt="CEO"
               width={200}
               height={200}
-              className="rounded-full mx-auto shadow-lg"
+              className=" mx-auto"
             />
             <h3 className="mt-4 font-semibold">Ms Helen Wong</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">CEO</p>
@@ -107,7 +107,7 @@ export default function AboutPage() {
               alt="Deputy CEO"
               width={200}
               height={200}
-              className="rounded-full mx-auto shadow-lg"
+              className="mx-auto"
             />
             <h3 className="mt-4 font-semibold">Mr Tan Teck Long</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -120,7 +120,7 @@ export default function AboutPage() {
               alt="Head of Operations"
               width={200}
               height={200}
-              className="rounded-full mx-auto shadow-lg"
+              className=" mx-auto"
             />
             <h3 className="mt-4 font-semibold">Ms Goh Chin Yee</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">CFO</p>
