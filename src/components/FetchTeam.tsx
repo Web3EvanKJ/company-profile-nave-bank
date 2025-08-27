@@ -64,7 +64,9 @@ const FetchTeam = () => {
             className="rounded-full mb-4"
           />
           <h3 className="text-lg font-semibold">{member.name}</h3>
-          <p className="text-sm text-red-600 font-medium mb-2">{member.role}</p>
+          <p className="text-sm text-green-600 font-medium mb-2">
+            {member.role}
+          </p>
           <p className="text-gray-600 text-sm">{member.bio}</p>
         </div>
       ))}

@@ -12,7 +12,7 @@ const AccountType = () => {
     <div>
       <div className="text-center mb-16">
         <h2 className="text-3xl sm:text-5xl font-bold mb-4">
-          <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent">
             Account Options
           </span>
         </h2>
@@ -29,7 +29,7 @@ const AccountType = () => {
           <CardHeader>
             <CardTitle className="flex items-center justify-between">
               Essential Checking
-              <span className="text-sm text-red-600 font-normal">Free</span>
+              <span className="text-sm text-green-600 font-normal">Free</span>
             </CardTitle>
             <CardDescription className="text-2xl font-bold text-gray-900 dark:text-white">
               $0/month
@@ -38,15 +38,15 @@ const AccountType = () => {
           <CardContent>
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-red-600" />
+                <CheckCircle className="h-4 w-4 text-green-600" />
                 No monthly fees
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-red-600" />
+                <CheckCircle className="h-4 w-4 text-green-600" />
                 Free mobile banking
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-red-600" />
+                <CheckCircle className="h-4 w-4 text-green-600" />
                 Online bill pay
               </li>
             </ul>
@@ -55,14 +55,16 @@ const AccountType = () => {
 
         <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-blue-200 relative">
           <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-            <span className="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-medium">
+            <span className="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-medium">
               Most Popular
             </span>
           </div>
           <CardHeader>
             <CardTitle className="flex items-center justify-between">
               Premium Plus
-              <span className="text-sm text-red-600 font-normal">Premium</span>
+              <span className="text-sm text-green-600 font-normal">
+                Premium
+              </span>
             </CardTitle>
             <CardDescription className="text-2xl font-bold text-gray-900 dark:text-white">
               $15/month
@@ -71,19 +73,19 @@ const AccountType = () => {
           <CardContent>
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-red-600" />
+                <CheckCircle className="h-4 w-4 text-green-600" />
                 All Essential features
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-red-600" />
+                <CheckCircle className="h-4 w-4 text-green-600" />
                 2.5% APY savings rate
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-red-600" />
+                <CheckCircle className="h-4 w-4 text-green-600" />
                 Priority customer support
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-red-600" />
+                <CheckCircle className="h-4 w-4 text-green-600" />
                 Investment advisory
               </li>
             </ul>
@@ -94,7 +96,7 @@ const AccountType = () => {
           <CardHeader>
             <CardTitle className="flex items-center justify-between">
               Private Banking
-              <span className="text-sm text-red-600 font-normal">Elite</span>
+              <span className="text-sm text-green-600 font-normal">Elite</span>
             </CardTitle>
             <CardDescription className="text-2xl font-bold text-gray-900 dark:text-white">
               $50/month
@@ -103,19 +105,19 @@ const AccountType = () => {
           <CardContent>
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-red-600" />
+                <CheckCircle className="h-4 w-4 text-green-600" />
                 All Premium features
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-red-600" />
+                <CheckCircle className="h-4 w-4 text-green-600" />
                 Dedicated relationship manager
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-red-600" />
+                <CheckCircle className="h-4 w-4 text-green-600" />
                 Exclusive investment products
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-red-600" />
+                <CheckCircle className="h-4 w-4 text-green-600" />
                 Concierge services
               </li>
             </ul>

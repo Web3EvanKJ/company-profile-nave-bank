@@ -3,11 +3,11 @@ import FetchTeam from "@/components/FetchTeam";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "OCBC Bank",
-  description: "OCBC bank official website",
+  title: "Nave Bank",
+  description: "Nave bank official website",
   icons: {
-    icon: "/assets/ocbc-logo.jpg", // normal favicon
-    shortcut: "/assets/ocbc-logo.jpg", // for browser shortcuts
+    icon: "/assets/Logo-nave.png", // normal favicon
+    shortcut: "/assets/Logo-nave.png", // for browser shortcuts
   },
 };
 
@@ -17,14 +17,14 @@ export default function TeamPage() {
       {/* Hero Section */}
       <section className="relative w-full h-[50vh] flex items-center justify-center bg-gray-100 dark:bg-gray-900">
         <Image
-          src="/assets/ocbc.jpg"
-          alt="About OCBC"
+          src="/assets/nave.jpg"
+          alt="About Nave"
           fill
           className="object-cover opacity-10"
           priority
         />
         <div className="relative z-10 text-center px-6">
-          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent leading-snug">
+          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent leading-snug">
             Meet Our Team
           </h1>
           <p className="mt-4 text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">

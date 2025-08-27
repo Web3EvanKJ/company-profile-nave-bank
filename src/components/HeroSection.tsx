@@ -11,7 +11,7 @@ const HeroSection = () => {
               Your Trusted{" "}
               <span className="block">
                 Financial{" "}
-                <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent">
                   Partner
                 </span>
               </span>
@@ -29,15 +29,15 @@ const HeroSection = () => {
 
         <div className="flex flex-wrap gap-6 text-sm text-gray-600 dark:text-gray-300">
           <div className="flex items-center gap-2">
-            <CheckCircle className="h-4 w-4 text-red-600" />
+            <CheckCircle className="h-4 w-4 text-green-600" />
             <span>FDIC Insured</span>
           </div>
           <div className="flex items-center gap-2">
-            <CheckCircle className="h-4 w-4 text-red-600" />
+            <CheckCircle className="h-4 w-4 text-green-600" />
             <span>24/7 Support</span>
           </div>
           <div className="flex items-center gap-2">
-            <CheckCircle className="h-4 w-4 text-red-600" />
+            <CheckCircle className="h-4 w-4 text-green-600" />
             <span>No Hidden Fees</span>
           </div>
         </div>

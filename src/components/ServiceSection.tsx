@@ -5,7 +5,7 @@ const ServiceSection = () => {
     <div>
       <div className="text-center mb-16">
         <h2 className="text-3xl sm:text-5xl font-bold mb-4">
-          <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent">
             Our Services
           </span>
         </h2>
@@ -15,8 +15,8 @@ const ServiceSection = () => {
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div className="text-center p-6">
-          <div className="w-16 h-16 bg-red-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
-            <PiggyBank className="h-8 w-8 text-red-600" />
+          <div className="w-16 h-16 bg-green-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+            <PiggyBank className="h-8 w-8 text-green-600" />
           </div>
           <h3 className="font-semibold mb-2">Savings Accounts</h3>
           <p className="text-sm text-gray-600 dark:text-gray-300">
@@ -25,8 +25,8 @@ const ServiceSection = () => {
         </div>
 
         <div className="text-center p-6">
-          <div className="w-16 h-16 bg-red-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
-            <CreditCard className="h-8 w-8 text-red-600" />
+          <div className="w-16 h-16 bg-green-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+            <CreditCard className="h-8 w-8 text-green-600" />
           </div>
           <h3 className="font-semibold mb-2">Credit Cards</h3>
           <p className="text-sm text-gray-600 dark:text-gray-300">
@@ -35,8 +35,8 @@ const ServiceSection = () => {
         </div>
 
         <div className="text-center p-6">
-          <div className="w-16 h-16 bg-red-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Building className="h-8 w-8 text-red-600" />
+          <div className="w-16 h-16 bg-green-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Building className="h-8 w-8 text-green-600" />
           </div>
           <h3 className="font-semibold mb-2">Home Loans</h3>
           <p className="text-sm text-gray-600 dark:text-gray-300">
@@ -45,8 +45,8 @@ const ServiceSection = () => {
         </div>
 
         <div className="text-center p-6">
-          <div className="w-16 h-16 bg-red-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Award className="h-8 w-8 text-red-600" />
+          <div className="w-16 h-16 bg-green-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Award className="h-8 w-8 text-green-600" />
           </div>
           <h3 className="font-semibold mb-2">Premium Banking</h3>
           <p className="text-sm text-gray-600 dark:text-gray-300">

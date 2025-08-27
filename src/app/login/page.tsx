@@ -19,7 +19,7 @@ export default function LoginPage() {
 
   return (
     <div className="p-10 max-w-md min-h-screen mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-red-600">Login</h1>
+      <h1 className="text-3xl font-bold mb-6 text-green-600">Login</h1>
       <form onSubmit={handleLogin} className="space-y-4">
         <Input
           placeholder="Username"
@@ -36,7 +36,7 @@ export default function LoginPage() {
         />
         <Button
           type="submit"
-          className="bg-red-600 hover:bg-red-700 text-white w-full"
+          className="bg-green-600 hover:bg-green-700 text-white w-full"
         >
           Login
         </Button>

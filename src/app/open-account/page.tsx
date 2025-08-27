@@ -27,7 +27,7 @@ export default function OpenAccountPage() {
   return (
     <div className="min-h-screen  bg-gray-50 flex items-center justify-center px-4">
       <div className="w-full max-w-md my-8 bg-white rounded-2xl shadow-lg p-8">
-        <h1 className="text-3xl font-bold text-red-600 text-center mb-6">
+        <h1 className="text-3xl font-bold text-green-600 text-center mb-6">
           Open an Account
         </h1>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -41,7 +41,7 @@ export default function OpenAccountPage() {
               value={formData.fullName}
               onChange={handleChange}
               required
-              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:border-red-500 focus:ring-red-500"
+              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:border-green-500 focus:ring-green-500"
             />
           </div>
 
@@ -55,7 +55,7 @@ export default function OpenAccountPage() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:border-red-500 focus:ring-red-500"
+              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:border-green-500 focus:ring-green-500"
             />
           </div>
 
@@ -69,7 +69,7 @@ export default function OpenAccountPage() {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:border-red-500 focus:ring-red-500"
+              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:border-green-500 focus:ring-green-500"
             />
           </div>
 
@@ -83,7 +83,7 @@ export default function OpenAccountPage() {
               value={formData.password}
               onChange={handleChange}
               required
-              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:border-red-500 focus:ring-red-500"
+              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:border-green-500 focus:ring-green-500"
             />
           </div>
 
@@ -97,13 +97,13 @@ export default function OpenAccountPage() {
               value={formData.confirmPassword}
               onChange={handleChange}
               required
-              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:border-red-500 focus:ring-red-500"
+              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 focus:border-green-500 focus:ring-green-500"
             />
           </div>
 
           <button
             type="submit"
-            className="w-full inline-flex items-center justify-center rounded-md bg-red-600 px-4 py-2 text-white font-medium shadow hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 transition"
+            className="w-full inline-flex items-center justify-center rounded-md bg-green-600 px-4 py-2 text-white font-medium shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 transition"
           >
             Create Account
           </button>

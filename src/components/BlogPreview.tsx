@@ -31,7 +31,7 @@ const BlogPreview = () => {
                   className=" mb-6 w-full h-48 object-cover"
                 />
               )}
-              <h2 className="text-2xl font-semibold text-red-600">
+              <h2 className="text-2xl font-semibold text-green-600">
                 {post.title}
               </h2>
               <p className="text-gray-600 mt-2 line-clamp-4">{post.body}</p>

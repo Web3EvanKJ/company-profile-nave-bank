@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OCBC Bank",
-  description: "OCBC bank official website",
+  title: "Nave Bank",
+  description: "Nave bank official website",
   icons: {
-    icon: "/assets/ocbc-logo.jpg", // normal favicon
-    shortcut: "/assets/ocbc-logo.jpg", // for browser shortcuts
+    icon: "/assets/Logo-nave.png", // normal favicon
+    shortcut: "/assets/Logo-nave.png", // for browser shortcuts
   },
 };
 

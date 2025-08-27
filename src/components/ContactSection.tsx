@@ -6,7 +6,7 @@ const ContactSection = () => {
     <div className="text-center">
       <h2 className="text-3xl font-bold mb-8">Ready to Get Started?</h2>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Button size="lg" className="bg-red-600 hover:bg-red-700">
+        <Button size="lg" className="bg-green-600 hover:bg-green-700">
           Open Account Today
         </Button>
         <Button variant="outline" size="lg">

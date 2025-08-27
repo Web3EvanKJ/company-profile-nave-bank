@@ -13,7 +13,7 @@ const FeaturesSection = () => {
       {" "}
       <div className="text-center mb-16">
         <h2 className="text-3xl sm:text-5xl font-bold mb-4">
-          <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent">
             Banking Solutions
           </span>
         </h2>
@@ -26,7 +26,7 @@ const FeaturesSection = () => {
       <FeatureCard />
       {/* Stats Cards */}
       <div className="grid grid-cols-2 gap-4 pt-4">
-        <Card className="bg-gradient-to-r from-red-600 to-red-500 text-white border-0">
+        <Card className="bg-gradient-to-r from-green-600 to-green-500 text-white border-0">
           <CardContent className="p-4">
             <p className="text-sm opacity-90 mb-1">Assets Under Management</p>
             <div className="text-2xl sm:text-3xl font-bold">

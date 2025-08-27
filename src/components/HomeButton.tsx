@@ -7,7 +7,7 @@ const HomeButton = () => {
     <div className="flex flex-col sm:flex-row gap-4">
       <Button
         size="lg"
-        className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white group"
+        className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white group"
         onClick={() => window.open("/open-account", "_blank")}
       >
         Open Account

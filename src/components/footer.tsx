@@ -10,8 +10,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mx-3">
           {/* Brand / Logo */}
           <div>
-            <h2 className="text-xl font-bold text-red-600 dark:text-white">
-              OCBC Inc
+            <h2 className="text-xl font-bold text-green-600 dark:text-white">
+              Nave Inc
             </h2>
             <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
               Your trusted financial partner for modern banking solutions.
@@ -121,7 +121,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="mt-12 border-t border-gray-200 dark:border-gray-800 pt-6 flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            © {new Date().getFullYear()} OCBC Inc. All rights reserved.
+            © {new Date().getFullYear()} Nave Inc. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link

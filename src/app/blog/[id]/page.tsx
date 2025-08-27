@@ -23,7 +23,7 @@ export default function BlogDetailPage() {
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
       {/* Blog Header */}
-      <h1 className="text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent mb-4 leading-snug">
+      <h1 className="text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-green-600 to-green-500 bg-clip-text text-transparent mb-4 leading-snug">
         {post.title}
       </h1>
 

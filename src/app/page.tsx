@@ -10,7 +10,7 @@ function App() {
       <section
         className="relative lg:h-[90vh] h-[70vh] flex items-center justify-start bg-cover bg-center text-white"
         style={{
-          backgroundImage: "url('/assets/ocbc-sky-banner.jpg')",
+          backgroundImage: "url('/assets/nave-sky-banner.png')",
         }}
       >
         <div className="absolute inset-0 bg-white/50 " />
