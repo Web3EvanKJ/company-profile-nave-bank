@@ -35,7 +35,7 @@ export default function AboutPage() {
       </section>
 
       {/* Company Story */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
+      <section className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <Image
             src="/assets/Logo-nave.png"
@@ -49,11 +49,11 @@ export default function AboutPage() {
               Our Story
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              Founded with the mission to greenefine modern banking, nave has
-              been at the forefront of delivering innovative financial
-              solutions. Our focus on transparency, security, and customer-first
-              service has helped us grow into a trusted institution for
-              individuals and businesses alike.
+              Founded with the mission to redefine modern banking, nave has been
+              at the forefront of delivering innovative financial solutions. Our
+              focus on transparency, security, and customer-first service has
+              helped us grow into a trusted institution for individuals and
+              businesses alike.
             </p>
           </div>
         </div>
