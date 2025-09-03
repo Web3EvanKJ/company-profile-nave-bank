@@ -35,13 +35,14 @@ export function BlogFormDialog({ mode, post }: BlogFormDialogProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!user) return;
+    console.log("Hello!");
+    // if (!user) return;
 
     if (mode === "add") {
       addPost({
         title,
         body,
-        author: user.username,
+        author: user ? user?.username : "Guest",
         date: new Date().toLocaleDateString(),
       });
     } else if (mode === "edit" && post) {
@@ -57,7 +58,9 @@ export function BlogFormDialog({ mode, post }: BlogFormDialogProps) {
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         {mode === "add" ? (
-          <Button className="bg-green-600">+ Add Blog</Button>
+          <Button className="bg-green-600 hover:bg-green-700">
+            + Add Blog
+          </Button>
         ) : (
           <Button variant="outline" size="sm">
             Edit
@@ -85,7 +88,10 @@ export function BlogFormDialog({ mode, post }: BlogFormDialogProps) {
             onChange={(e) => setBody(e.target.value)}
             required
           />
-          <Button type="submit" className="w-full">
+          <Button
+            type="submit"
+            className="w-full bg-green-600 hover:bg-green-700"
+          >
             {mode === "add" ? "Publish" : "Update"}
           </Button>
         </form>

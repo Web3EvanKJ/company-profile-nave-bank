@@ -12,7 +12,7 @@ const BlogPreview = () => {
   return (
     <div>
       <div className="flex justify-between items-center mb-8">
-        {user && <BlogFormDialog mode="add" />}
+        <BlogFormDialog mode="add" />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
