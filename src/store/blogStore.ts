@@ -53,7 +53,7 @@ const useBlogStore = create<BlogStore>((set) => ({
     set((state) => ({
       posts: [
         ...state.posts,
-        { ...post, id: Number(crypto.randomUUID()) }, // auto id
+        { ...post, id: Date.now() + Math.floor(Math.random() * 1000) }, // auto id
       ],
     })),
   editPost: (id, updated) =>

@@ -37,8 +37,8 @@ export default function BlogDetailPage() {
       </div>
 
       {/* Featured Image */}
-      <div className="relative w-full sm:h-[200px] sm:mb-10 md:h-[500px] md:mb-20">
-        {post.image && (
+      {post.image && (
+        <div className="relative w-full sm:h-[200px] sm:mb-10 md:h-[500px] md:mb-20">
           <Image
             src={post?.image}
             alt={post.title}
@@ -46,8 +46,8 @@ export default function BlogDetailPage() {
             height={200}
             className="rounded-lg shadow-lg mb-6 w-full object-cover"
           />
-        )}
-      </div>
+        </div>
+      )}
       {/* Blog Content */}
       <article className="leading-relaxed text-gray-800">{post.body}</article>
 
